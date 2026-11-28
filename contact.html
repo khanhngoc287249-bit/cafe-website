@@ -15,14 +15,46 @@
       <a href="contact.html">Liên hệ</a>
     </nav>
   </header>
+
   <main>
     <h2>Thông tin liên hệ</h2>
     <p>Địa chỉ: 123 Đường Nguyễn Huệ, Phường 1</p>
+    <p>Hotline: Đang cập nhật</p>
     <p>Email: goccaphenho@example.com</p>
+    <p>
+      Chỉ đường:
+      <a href="https://www.google.com/maps/search/?api=1&query=123+Duong+Nguyen+Hue+Phuong+1"
+         target="_blank">
+        Xem vị trí trên Google Maps
+      </a>
+    </p>
+
+    <h2>Đặt bàn</h2>
     <form>
-      <label>Tên của bạn: <input type="text" name="name"></label><br><br>
-      <label>Lời nhắn: <input type="text" name="message"></label><br><br>
-      <button type="submit">Gửi lời nhắn</button>
+      <label>
+        Họ và tên:
+        <input type="text" name="name" required>
+      </label>
+      <br><br>
+
+      <label>
+        Số điện thoại:
+        <input type="tel" name="phone" required>
+      </label>
+      <br><br>
+
+      <label>
+        Số lượng khách:
+        <input type="number" name="guests" min="1" required>
+      </label>
+      <br><br>
+
+      <label for="notes">Ghi chú đặt bàn:</label>
+      <br>
+      <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+      <br><br>
+
+      <button type="submit">Gửi yêu cầu đặt bàn</button>
     </form>
   </main>
 </body>
